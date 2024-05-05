@@ -1,0 +1,6 @@
+strict graph IPAddresses {
+    layout=neato;
+    overlap=false;
+    node [ style=filled, color=cornflowerblue ]
+    "" -- "";
+}
