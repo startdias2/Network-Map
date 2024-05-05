@@ -4,18 +4,18 @@
 # Get a MAP view from a PCAP. 
 
 ## 1 
-Get the Network-Map-main folder file in the CODE button of this site,
+Get the zip file in the CODE button and Unzip it.
 If your via CLI use: 
 git clone https://github.com/startdias2/Network-Map.git
 
 ## 2
-Open your PCAP with Wireshark and then go to:
-Statistics  >  Conversations  >  Select the "IPv4" bar > Click on "Copy" > "CSV".
+Open your PCAP with Wireshark, 
+Go to:
+Statistics  >  Conversations  >  Select the "IPv4" bar > Click on "Copy" and slect "CSV".
 
 ## 3 
-Create an .csv file with the name:  conversations 
-and save the copied information on it
-Save this csv file in the Network-Map-main folder.
+Paste the information inside the conversations.csv file,
+you can use excel or nano conversation.csv
 
 ## 4 
 Run the netmap.sh file and it will open the map as an SVG file automatically on your browser.
