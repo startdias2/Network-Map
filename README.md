@@ -20,4 +20,6 @@ you can use excel or nano conversation.csv
 ## 4 
 Run the netmap.sh file and it will open the map as an SVG file automatically on your browser.
 
+To change the map for a new one just change the information inside the conversation.csv file 
+
 Cheers ;-)
