@@ -4,7 +4,7 @@
 # Get a MAP view from a PCAP. 
 
 ## 1 
-Install Graviz on your machine.
+Install Graphviz on your machine.
 
 ## 2
 Get the zip file in the CODE button and Unzip it.
