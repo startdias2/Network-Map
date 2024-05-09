@@ -43,3 +43,4 @@ dot -Tsvg "$output_file" -o IPAddresses.svg
 
 # Open the SVG file in a web browser
 start IPAddresses.svg
+xdg-open IPAddresses.svg
