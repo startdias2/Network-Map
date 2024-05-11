@@ -7,7 +7,7 @@
 Install Graphviz on your machine.
 
 ## 2
-Get the zip file in the CODE button and Unzip it.
+Get the zip file and extract it, lick on the green code button on the top,
 If your via CLI use: 
 git clone https://github.com/startdias2/Network-Map.git
 
