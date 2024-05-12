@@ -1,21 +1,6 @@
 #!/bin/bash
 
-# Function to display a progress bar
-function progress_bar() {
-    local duration=$1
-    local interval=$2
-    local i=0
-    local progress_char="█"
-    local progress=""
-    
-    while [ $i -le $duration ]; do
-        progress="$progress$progress_char"
-        echo -ne "\r[$progress] ($i/$duration)"
-        sleep "$interval"
-        ((i++))
-    done
-    echo
-}
+#1.4
 
 # Function to generate DOT file from CSV conversation data
 function generateDOTFile() {
@@ -91,12 +76,12 @@ function open_svg() {
     local svg_file=$1
     local choice
     echo "How would you like to open the SVG file?"
-    echo "1. Web browser"
-    echo "2. Image viewer"
+    echo "1. Windows"
+    echo "2. Linux"
     read -p "Enter your choice (1 or 2): " choice
     case $choice in
         1) start "$svg_file" ;;
-        2) display "$svg_file" ;;
+        2) xdg-open "$svg_file" ;;
         *) echo "Invalid choice. Exiting." ;;
     esac
 }
@@ -104,14 +89,6 @@ function open_svg() {
 # Default values
 input_file="conversation.csv"
 output_file="IPAddresses.dot"
-
-# Set the duration and interval for the progress bar
-duration=20
-interval=1
-
-# Show the progress bar while generating the DOT file
-echo "Generating DOT file..."
-progress_bar "$duration" "$interval"
 
 # Generate DOT file with IP addresses
 generateDOTFile "$input_file" "$output_file"
