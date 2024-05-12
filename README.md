@@ -8,14 +8,14 @@
 Install Graphviz on your machine.
 
 ## 2
-Get the zip file and extract it, lick on the green code button on the top,
+Get the zip file and extract it, click on the green code button on the top,
 If your via CLI use: 
 git clone https://github.com/startdias2/Network-Map.git
 
 ## 3
 Open your PCAP with Wireshark, 
 Go to:
-Statistics  >  Conversations  >  Select the "IPv4" bar > Click on "Copy" and slect "CSV".
+Statistics  >  Conversations  >  Select the "IPv4" bar > Click on "Copy" and select "CSV".
 
 ## 4
 Paste the information inside the conversations.csv file,
